@@ -32,11 +32,15 @@ The key things you need to know are:
 
 - This network uses 96x96 dimensional RGB images as its input. Specifically, inputs a face image (or batch of **m** face images) as a tensor of shape **(m, n_C, n_H, n_W) = (m, 3, 96, 96)**
 
-- It outputs a matrix of shape $(m, 128)$ that encodes each input face image into a 128-dimensional vector
+- It outputs a matrix of shape **(m, 128)** that encodes each input face image into a 128-dimensional vector
 
 By using a 128-neuron fully connected layer as its last layer, the model ensures that the output is an encoding vector of size 128. You then use the encodings to compare two face images as follows:
 
 ![](https://github.com/adnaneaabbar/face-recognition-for-authorized-staff/blob/master/assets/distance_kiank.png?raw=true)
+
+The[Inception](https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202) model is made out of blocks looking like this :
+![](http://media5.datahacker.rs/2018/11/Featured-Image-017-CNN-Inception-Network-1.jpg)
+
 
 So, an encoding is a good one if: 
 
