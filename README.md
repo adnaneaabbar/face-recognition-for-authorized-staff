@@ -74,6 +74,8 @@ You'd like to make sure that an image **A^{(i)}** of an individual is closer to 
 
 FaceNet is trained by minimizing the triplet loss. But since training requires a lot of data and a lot of computation, we won't train it from scratch here. Instead, we load a previously trained model.
 
+You should add a *weights* folder to your root, and place the weights files in it for this to work. I would love to upload them for you, but it's 67Mo and a total of 226 files. Sorry :( !
+
 Here are some examples of distances between the encodings between three individuals:
 
 ![](https://github.com/adnaneaabbar/face-recognition-for-authorized-staff/blob/master/assets/distance_matrix.png?raw=true)
